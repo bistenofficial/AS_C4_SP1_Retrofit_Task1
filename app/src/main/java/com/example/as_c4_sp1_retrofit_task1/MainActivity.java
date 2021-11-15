@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -64,4 +66,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void goToStatistic(View view)
+    {
+        Intent intent = new Intent(this, MainActivityStatistic.class);
+        startActivity(intent);
+    }
 }
